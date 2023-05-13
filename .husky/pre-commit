@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo '🏗️👷 Linting, testing and building your project before committing'
+
+npx lint-staged
+
+# If everything passes... Now we can commit
+echo '✅ Committing now ✅'
